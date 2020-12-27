@@ -151,13 +151,12 @@ ul {
 .seasons__inner {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 0 75px;
+    grid-gap: 100px 75px;
 }
 
 .seasons__item {
     width: 350px;
     height: 250px;
-    background-image: url('../images/seasons__image-2.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
