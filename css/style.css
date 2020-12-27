@@ -152,6 +152,7 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 100px 75px;
+    counter-reset: number;
 }
 
 .seasons__item {
@@ -160,4 +161,19 @@ ul {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    list-style: none;
+    position: relative;
+}
+
+.seasons__item::before {
+    content: '0' counter(number);
+    counter-increment: number;
+    position: absolute;
+    left: 0;
+    top: -71px;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 112px;
+    color: #600E09;
+    z-index: -1;
 }
